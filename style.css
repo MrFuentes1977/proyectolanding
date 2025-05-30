@@ -1,90 +1,96 @@
-/* Estilos generales */
+/* Tipografías generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: auto;
-    max-width: 700px;
+    max-width: 800px;
     padding: 0;
-    background-color: rgb(36, 36, 36);
-    color: rgb(235, 235, 222);
+    background-color: #1E1E2F;
+    color: #FFFFFF;
+}
+
+/* Título con tipografía estilo terminal */
+header h1 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2em;
 }
 
 /* Header */
 header {
-    background-color: #1e1e2f;
-    color: #ffffff;
-    padding: 5px;
+    background-color: #1E1E2F;
+    color: #00FFAA;
+    padding: 20px;
     text-align: center;
 }
 
 /* Footer */
 footer {
-    background-color: #1e1e2f;
-    color: #ffffff;
-    padding: 5px;
+    background-color: #1E1E2F;
+    color: #FFFFFF;
+    padding: 10px;
     text-align: center;
+    font-size: 0.9em;
 }
 
-/* Main en grilla */
+/* Main como grilla */
 main {
-    background-color: #f4f4f9;
-    padding: 10px;
-    color: #222222;
-
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;   
-    grid-gap: 10px;   
-    justify-content: center;  
-    align-items: center;
-}
-
-/* Divs dentro del main */
-main div {
-    background-color: #e0e7ff;
-    color: #1a237e;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 8px;
-}
-
-/* Estilo para el enlace tipo botón */
-a {
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
+    background-color: #F0F0F0;
     padding: 20px;
-    margin: auto;
-    border-radius: 10px;
-    font-size: 20px;
-    text-align: center;
-    display: block;
-    width: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    color: #1E1E2F;
 }
 
-/* Estilo para el hover del enlace - según consigna */
-a:hover {
-    background-color: rgb(94, 53, 53);     
+/* Secciones del main */
+main > div {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Botón de llamada a la acción */
+.boton {
+    background-color: #00FFAA;
+    color: #1E1E2F;
+    font-family: 'Share Tech Mono', monospace;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color: #00cc88;
+    transform: scale(1.05);
 }
 
 /* Imágenes */
 img {
     width: 100%;
     height: auto;
-    display: block;
+    border-radius: 10px;
 }
 
-/* Estilo para los iframes */
+/* Video */
 iframe {
     width: 100%;
     height: 200px;
+    border-radius: 10px;
+    border: none;
 }
 
-/* Ajuste de alineación interna para cada div */
-main > div {
-    height: 100%;
-    display: grid;   
-    align-items: center;  
+/* Asegura que los textos en #descripcion usen Roboto */
+#descripcion p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
-
